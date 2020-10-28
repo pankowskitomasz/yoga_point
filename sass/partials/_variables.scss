@@ -1,0 +1,23 @@
+$backdrop__filter--privacy: blur(10px) contrast(75%);
+$bg__blend--type: multiply;
+$bg__classes:
+    "error",
+    "comingsoon",
+    "privacy";
+$bg__comingsoon-img: "../img/yoga_amazing.jpg";
+$bg__error-img: "../img/yoga_amazing.jpg";
+$bg__privacy-img: "../img/privacy.jpg";
+$bg__aoa:
+    $bg__error-img,
+    $bg__comingsoon-img,
+    $bg__privacy-img;
+$body__min-height: 100%;
+$color__bg-1: #BEE3F8;
+$color__dark: #333;
+$color__transparent: transparent;
+$font-logo__family: 'Montserrat';
+$font-logo__size: 32px;
+$font-main__family: 'Montserrat';
+$font-main__size: 16px;
+$section__min-height: 100vh;
+$text__shadow: 0 0 3px $color__dark;
