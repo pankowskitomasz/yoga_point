@@ -1,16 +1,44 @@
 $backdrop__filter--privacy: blur(10px) contrast(75%);
+$bg__benefit-img:
+    "../img/benefits/benefit_1.png",
+    "../img/benefits/benefit_3.png",
+    "../img/benefits/benefit_5.png",
+    "../img/benefits/benefit_6.png",
+    "../img/benefits/benefit_4.png",
+    "../img/benefits/benefit_2.png";
 $bg__blend--type: multiply;
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "user",
+    "events",
+    "index",
+    "benefit";
 $bg__comingsoon-img: "../img/yoga_amazing.jpg";
 $bg__error-img: "../img/yoga_amazing.jpg";
+$bg__events-img:
+    "",
+    "../img/bgs/bg_2.jpg";
+$bg__index-img:
+    "../img/bgs/bg_0.jpg",
+    "",
+    "",
+    "../img/bgs/bg_4.png",
+    "",
+    "../img/benefits/benefit_4.png";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__user-img:
+    "",
+    "../img/triangles.jpg";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__user-img,
+    $bg__events-img,
+    $bg__index-img,
+    $bg__benefit-img;
 $body__min-height: 100%;
 $color__bg-1: #BEE3F8;
 $color__dark: #333;

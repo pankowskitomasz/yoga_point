@@ -8,21 +8,43 @@
     @include background-blend($bg__blend--type, $color__bg-1);
 }
 
+%bg-scroll{
+    background-attachment: scroll;
+    background-position: center;
+}
+.benefit{
+    &-s1{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s2{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s3{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s4{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s5{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s6{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
 .error{
-    &-s1{
-        @extend %bg-blend;
-    }
-}
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
     &-s1{
         @extend %bg-blend;
     }
@@ -37,6 +59,33 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.index{
+    &-s1{
+        @extend %bg-scroll;
+    }
+    &-s4{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+    &-s6{
+        @extend %bg-scroll;
+        background-size: contain;
+    }
+}
+.minh{
+    &-25vh{
+        min-height: 25vh;
+    }
+    &-50vh{
+        min-height: 50vh;        
+    }
+    &-75vh{
+        min-height: 75vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -44,9 +93,22 @@
         }
     }
 }
-
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
+    }
+}
+.user{
+    &-s2{
+        @extend %bg-scroll;
     }
 }
