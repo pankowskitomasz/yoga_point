@@ -4,228 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
+    <!--
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="node_modules/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="css/tailwind.build.css">
+    -->
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Yoga Point | The Art of living</title>
 </head>
 <body>
-    <header class="absolute w-full top-0 left-0 h-20 bg-transparent py-3">
+    <header class="header">
         <nav class="h-full">
-            <a href="index.html" class="inline-block mt-2 pl-3">
-                <img src="img/navbar_logo.png" class="float-left h-10" alt="logo">
+            <a href="index.html" class="navbar-logo__link">
+                <img src="img/navbar_logo.png" class="navbar-logo__img" alt="logo">
             </a>
-            <button class="float-right w-8 h-8 navbar-toggler-icon inline-block md:hidden mt-4 mr-3">
+            <button class="navbar-toggler-icon navbar-toggler__button">
             </button>
-            <div class="nav-menu hidden md:inline-block font-menu float-right p-3 w-full md:w-auto text-right mt-3 border border-blue-700 bg-white md:border-none md:mt-2 md:text-lg md:bg-transparent">                
-                <a href="index.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+            <div class="nav-menu font-menu navbar-menu">                
+                <a href="index.html" class="navbar-menu__item">
                     Home
                 </a>
-                <a href="classes.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+                <a href="classes.html" class="navbar-menu__item">
                     Classes
                 </a>
-                <a href="trainers.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+                <a href="trainers.html" class="navbar-menu__item">
                     Trainers
                 </a>
-                <a href="events.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+                <a href="events.html" class="navbar-menu__item">
                     Events
                 </a>
-                <a href="about.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+                <a href="about.html" class="navbar-menu__item">
                     About
                 </a>
-                <a href="user.html" class="text-blue-600 md:text-white mx-1 hover:text-blue-900 block md:inline">
+                <a href="user.html" class="navbar-menu__item">
                     Login
                 </a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="index-s1 bg-indigo-600 flex items-center border-b border-gray-800">
-            <div class="w-3/4 sm:w-2/3 md:2/5 mx-auto text-center">
-                <h3 class="text-3xl text-white mb-6">
+        <section class="index-s1 index-s1-ext">
+            <div class="index-s1__inner">
+                <h3 class="index__title">
                     Find The Way of Life, The Art of Living.
                 </h3>
-                <a href="classes.html" class="text-xl p-3 border border-white text-white hover:text-blue-900 hover:bg-white rounded-md">
+                <a href="classes.html" class="button-outline-white">
                     See Our Classes
                 </a>
             </div>
         </section>
-        <section class="index-s2 bg-white flex items-center p-10 minh-50vh">
-            <div class="w-3/4 container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto">
-                <div class="col-span-1 sm:col-span-2 md:col-span-3">
-                    <h3 class="text-3xl text-blue-800 mb-6 font-bold text-center">
+        <section class="index-s2 index-s2__ext minh-50vh">
+            <div class="index-s2__inner">
+                <div class="index-s2__header">
+                    <h3 class="index-s2__title">
                         Our Classes
                     </h3>
                 </div>
-                <a class="col-span-1 h-40 p-6 flex bg-indigo-600 hover:opacity-50 benefit-s5"
+                <a class="index-s2__tile bg-indigo-600 benefit-s5"
                     href="classes.html?cat=pregnants">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         Yoga for Pregnants
                     </h3>
                 </a>
-                <a class="col-span-1 h-40 p-6 flex bg-blue-600 hover:opacity-50 benefit-s3"
+                <a class="index-s2__tile bg-blue-600 benefit-s3"
                     href="classes.html?cat=kids">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         Yoga for Kids
                     </h3>
                 </a>
-                <a class="col-span-1 h-40 p-6 flex bg-purple-600 hover:opacity-50 benefit-s1"
+                <a class="index-s2__tile bg-purple-600 benefit-s1"
                     href="classes.html?cat=foundation">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         Yoga Foundation
                     </h3>
                 </a>
-                <a class="col-span-1 h-40 p-6 flex bg-teal-600 hover:opacity-50 benefit-s2"
+                <a class="index-s2__tile bg-teal-600 benefit-s2"
                     href="classes.html?cat=music">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         Yoga with Music
                     </h3>
                 </a>
-                <a class="col-span-1 h-40 p-6 flex bg-green-600 hover:opacity-50 benefit-s6"
+                <a class="index-s2__tile bg-green-600 benefit-s6"
                     href="classes.html?cat=intensity">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         Yoga High Intensity
                     </h3>
                 </a>
-                <a class="col-span-1 h-40 p-6 flex bg-pink-600 hover:opacity-50 benefit-s4"
+                <a class="index-s2__tile bg-pink-600 benefit-s4"
                     href="classes.html?cat=all">
-                    <h3 class="text-xl font-bold text-white self-center uppercase w-full text-center">
+                    <h3 class="index-s2__tile-title">
                         All Classes
                     </h3>
                 </a>
             </div>
         </section>
-        <section class="index-s3 bg-white flex items-center p-8 minh-50vh">
-            <div class="w-full container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-auto">
-                <div class="col-span-1 sm:col-span-2 md:col-span-4">
+        <section class="index-s3 index-s3-ext minh-50vh">
+            <div class="index-s3__inner">
+                <div class="index-s3__header">
                     <h3 class="text-3xl text-blue-800 font-bold text-center mb-6">
                         Our Trainers
                     </h3>
                 </div>
-                <div class="col-span-1 m-3 text-center">
-                    <img src="img/trainers/trainer_1.jpg" alt="trainer" class="w-full h-48 bg-gray-400 object-cover">
-                    <h3 class="p-3 text-xl font-bold text-gray-900">
+                <div class="trainer-box">
+                    <img src="img/trainers/trainer_1.jpg" alt="trainer" class="trainer-box__img">
+                    <h3 class="trainer-box__title">
                         Nick Liefhebber
                     </h3>
-                    <p class="mb-3 text-sm text-pink-600">
+                    <p class="trainer-box__text">
                         Hatha Specialist
                     </p>
                 </div>
-                <div class="col-span-1 m-3 text-center">
-                    <img src="img/trainers/trainer_2.jpg" alt="trainer" class="w-full h-48 bg-gray-400 object-cover">
-                    <h3 class="p-3 text-xl font-bold text-gray-900">
+                <div class="trainer-box">
+                    <img src="img/trainers/trainer_2.jpg" alt="trainer" class="trainer-box__img">
+                    <h3 class="trainer-box__title">
                         Fernando Vicente
                     </h3>
-                    <p class="mb-3 text-sm text-pink-600">
+                    <p class="trainer-box__text">
                         Hatha Specialist
                     </p>
                 </div>
-                <div class="col-span-1 m-3 text-center">
-                    <img src="img/trainers/trainer_3.jpg" alt="trainer" class="w-full h-48 bg-gray-400 object-cover">
-                    <h3 class="p-3 text-xl font-bold text-gray-900">
+                <div class="trainer-box">
+                    <img src="img/trainers/trainer_3.jpg" alt="trainer" class="trainer-box__img">
+                    <h3 class="trainer-box__title">
                         Ricardo Spencer
                     </h3>
-                    <p class="mb-3 text-sm text-pink-600">
+                    <p class="trainer-box__text">
                         Hatha Specialist
                     </p>
                 </div>
-                <div class="col-span-1 m-3 text-center">
-                    <img src="img/trainers/trainer_4.jpg" alt="trainer" class="w-full h-48 bg-gray-400 object-cover">
-                    <h3 class="p-3 text-xl font-bold text-gray-900">
+                <div class="trainer-box">
+                    <img src="img/trainers/trainer_4.jpg" alt="trainer" class="trainer-box__img">
+                    <h3 class="trainer-box__title">
                         Antonio Sortino
                     </h3>
-                    <p class="mb-3 text-sm text-pink-600">
+                    <p class="trainer-box__text">
                         Hatha Specialist
                     </p>
                 </div>
             </div>
         </section>
-        <section class="index-s4 flex items-center bg-indigo-600 minh-50vh py-12">
-            <div class="w-3/4 sm:w-2/3 md:2/5 mx-auto text-center">
-                <h3 class="text-3xl text-white mb-6 font-bold">
+        <section class="index-s4 index-s4__ext minh-50vh">
+            <div class="index-s4__inner">
+                <h3 class="index__title font-bold">
                     Events
                 </h3>
-                <p class="mb-10 text-xl text-white">
+                <p class="title__text">
                     We gathered the most incredible shots from mega-yoga 
                     events for a taste of the yoga inspiration that comes 
                     with doing your sun salutations en masse. Check them out now!
                 </p>
-                <a href="events.html" class="text-xl p-3 border border-white text-white hover:text-blue-900 hover:bg-white rounded-md">
+                <a href="events.html" class="button-outline-white">
                     Check Events
                 </a>
             </div>
         </section>
-        <section class="index-s5 flex items-center bg-white py-12 minh-50vh">
-            <div class="w-3/4 container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class="col-span-1 md:col-span-2">
-                    <h3 class="text-3xl text-blue-800 mb-6 font-bold text-center">
+        <section class="index-s5 index-s5-ext minh-50vh">
+            <div class="index-s5__inner">
+                <div class="index-s5__header">
+                    <h3 class="index-s5__title">
                         Membership Benefits
                     </h3>
                 </div>
-                <div class="col-span-1 bg-orange-500 text-center h-48 flex p-8 benefit-s1">
-                    <h3 class="font-bold text-white text-shadow text-lg self-center w-full">
+                <div class="benefits-tile bg-orange-500 benefit-s1">
+                    <h3 class="benefits__header text-shadow">
                         Calm & Cool Environment
                     </h3>
                 </div>
-                <div class="col-span-1 bg-purple-700 text-center h-48 flex p-8 benefit-s2">
-                    <h3 class="font-bold text-white text-shadow text-lg self-center w-full">
+                <div class="benefits-tile bg-purple-700 benefit-s2">
+                    <h3 class="benefits__header text-shadow">
                         Special discount on events and classes.
                     </h3>
                 </div>
-                <div class="col-span-1 bg-green-500 text-center h-48 flex p-8 benefit-s3">
-                    <h3 class="font-bold text-white text-shadow text-lg self-center w-full">
+                <div class="benefits-tile bg-green-500 benefit-s3">
+                    <h3 class="benefits__header text-shadow">
                         Unlimited Classes
                     </h3>
                 </div>
-                <div class="col-span-1 bg-blue-500 text-center h-48 flex p-8 benefit-s4">
-                    <h3 class="font-bold text-white text-shadow text-lg self-center w-full">
+                <div class="benefits-tile bg-blue-500 benefit-s4">
+                    <h3 class="benefits__header text-shadow">
                         A Commited Community
                     </h3>
                 </div>
             </div>
         </section>
-        <section class="index-s6 flex items-center bg-white p-6 sm:p-12 minh-50vh bg-pink-700">
-            <div class="w-full container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class="col-span-1 text-shadow text-center p-6 flex">
+        <section class="index-s6 index-s6-ext minh-50vh">
+            <div class="index-s6__inner">
+                <div class="index-s6__header text-shadow">
                     <div class="self-center">
-                        <h3 class="text-3xl text-white mb-6 font-bold">
+                        <h3 class="index__title font-bold">
                             Book an Appointment
                         </h3>
-                        <p class="mb-10 text-xl text-white">
+                        <p class="title__text">
                             Thinking about starting? Don't wait! Book your first yoga 
                             classes online now and get 50% discount.
                         </p>
                     </div>
                 </div>
-                <div class="col-span-1 sm:p-6">
-                    <form class="border border-pink-900 bg-white mx-auto p-6" autocomplete="off">
-                        <h3 class="text-md text-pink-700 text-left mb-6 border-b border-pink-300">
+                <div class="appointments-form__container">
+                    <form class="appointments-form__card" autocomplete="off">
+                        <h3 class="appointments-form__header">
                             Book online
                         </h3>
                         <div class="px-5">
-                            <label class="block mb-2 text-pink-800">Full Name</label>
+                            <label class="appointments-form__label">Full Name</label>
                             <input type="text" 
-                                class="w-full border-b border-pink-700 outline-none mb-5" 
+                                class="appointments-form__control" 
                                 name="fname"
                                 maxlength="80"
                                 placeholder="Enter name">
-                            <label class="block mb-2 text-pink-800">Email</label>
+                            <label class="appointments-form__label">Email</label>
                             <input type="email" 
-                                class="w-full border-b border-pink-700 outline-none mb-5" 
+                                class="appointments-form__control" 
                                 maxlength="80"
                                 name="femail"
                                 placeholder="Enter email">
-                            <label class="block mb-2 text-pink-800">Phone</label>
+                            <label class="appointments-form__label">Phone</label>
                             <input type="tel" 
-                                class="w-full border-b border-pink-700 outline-none mb-5" 
+                                class="appointments-form__control" 
                                 name="fphone"
                                 maxlength="18"
                                 placeholder="Enter phone">
                             <div class="text-right">
                                 <input type="reset"
-                                    class="text-sm px-3 py-2 bg-white border border-pink-900 text-pink-900 hover:text-white hover:bg-pink-700 rounded-md cursor-pointer"
+                                    class="appointments-form__button"
                                     value="clear">
                                 <input type="submit"
-                                    class="text-sm px-3 py-2 bg-white border border-pink-900 text-pink-900 hover:text-white hover:bg-pink-700 rounded-md cursor-pointer"
+                                    class="appointments-form__button"
                                     value="Send">                                                                                                    
                             </div>
                         </div>
@@ -234,47 +238,48 @@
             </div>
         </section>
     </main>
-    <footer class="flex w-full text-gray-400 bg-gray-800 px-6 pt-5 justify-center items-center border-t border-blue-800 text-center">
-        <div class="grid grid-cols-1 sm:grid-cols-3 w-full text-center">
-            <div class="col-span-1 sm:text-left">
-                <div class="text-gray-700 font-logo mx-3 mb-4">
-                    <img src="img/navbar_logo.png" class="h-10 mx-auto sm:ml-0" alt="logo">
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__address">
+                <div class="footer__logo-container font-logo">
+                    <img src="img/navbar_logo.png" class="footer__logo-img" alt="logo">
                 </div>
-                <ul class="list-none text-sm sm:pl-5 text-gray-600 uppercase mb-6">
-                    <li>Brigs Street 22, Compton</li>
-                    <li>+(880)-011-223-344</li>
-                    <li>contact&#64;yoga.yg</li>
+                <ul class="address-list">
+                    <li><small>Brigs Street 22, Compton</small></li>
+                    <li><small>+(880)-011-223-344</small></li>
+                    <li><small>contact&#64;yoga.yg</small></li>
                 </ul>
             </div>
-            <div class="col-span-2 sm:text-right p-3 text-gray-400 ">
-                <a href="index.html" class="mx-1 hover:text-gray-500 block md:inline">
+            <div class="footer__menu ">
+                <a href="index.html" class="footer__menu-item">
                     Home
                 </a>
-                <a href="classes.html" class="mx-1 hover:text-gray-500 block md:inline">
+                <a href="classes.html" class="footer__menu-item">
                     Classes
                 </a>
-                <a href="trainers.html" class="mx-1 hover:text-gray-500 block md:inline">
+                <a href="trainers.html" class="footer__menu-item">
                     Trainers
                 </a>
-                <a href="events.html" class="mx-1 hover:text-gray-500 block md:inline">
+                <a href="events.html" class="footer__menu-item">
                     Events
                 </a>
-                <a href="about.html" class="mx-1 hover:text-gray-500 block md:inline">
+                <a href="about.html" class="footer__menu-item">
                     About
                 </a>
-                <a href="user.html" class="mx-1 hover:text-gray-500 block md:inline">
+                <a href="user.html" class="footer__menu-item">
                     Login
                 </a>                
             </div>
-            <div class="col-span-1 sm:col-span-3 border-t border-gray-700 p-3">
-                <p class="text-sm mx-auto text-gray-400">
-                    Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-                    <a class="hover:text-gray-500 hover:underline" href="privacy.html">Privacy policy</a>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">
+                    <small>
+                        Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
+                        <a class="footer__copyright-link" href="privacy.html">Privacy policy</a>
+                    </small>
                 </p>                
             </div>
         </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

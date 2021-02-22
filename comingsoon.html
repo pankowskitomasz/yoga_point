@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Yoga Point | Coming soon!</title>
 </head>
 <body>
-    <header class="absolute w-full top-0 left-0 h-20 bg-transparent py-3">
+    <header class="header">
         <nav class="h-full">
-            <a href="index.html" class="inline-block mt-2 pl-3">
-                <img src="img/navbar_logo.png" class="float-left h-10" alt="logo">
+            <a href="index.html" class="navbar-logo__link">
+                <img src="img/navbar_logo.png" class="navbar-logo__img" alt="logo">
             </a>
         </nav>
     </header>
     <main>
-        <section class="error-s1 flex items-center justify-items-center">
-            <div class="w-10/12 sm:w-6/12 text-center mx-auto text-shadow text-white">
-                <h2 class="text-4xl font-bold">Coming soon :)</h2>
+        <section class="error-s1 error-s1__ext">
+            <div class="error-s1__inner text-shadow text-white">
+                <h2 class="error-s1__title">Coming soon :)</h2>
                 <p class="text-xl pt-5">
                     Hi, we are not ready yet, however we are staring soon. <br> 
                     Please visit us again in a while.
@@ -27,13 +26,28 @@
             </div>
         </section>
     </main>
-    <footer class="flex w-full h-16 text-white bg-blue-700 p-3 justify-center items-center border-t border-blue-800 text-center">
-        <p class="text-sm">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="hover:text-blue-300 hover:underline" href="privacy.html">Privacy policy</a>
-        </p>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__address">
+                <div class="footer__logo-container font-logo">
+                    <img src="img/navbar_logo.png" class="footer__logo-img" alt="logo">
+                </div>
+                <ul class="address-list">
+                    <li><small>Brigs Street 22, Compton</small></li>
+                    <li><small>+(880)-011-223-344</small></li>
+                    <li><small>contact&#64;yoga.yg</small></li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">
+                    <small>
+                        Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
+                        <a class="footer__copyright-link" href="privacy.html">Privacy policy</a>
+                    </small>
+                </p>                
+            </div>
+        </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
