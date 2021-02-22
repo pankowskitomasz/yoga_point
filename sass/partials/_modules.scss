@@ -59,6 +59,9 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.header{
+    min-height: $header__min-height;
+}
 .index{
     &-s1{
         @extend %bg-scroll;
@@ -110,5 +113,19 @@
 .user{
     &-s2{
         @extend %bg-scroll;
+    }
+}
+
+@media all and (min-width: 768px){
+    .navbar-menu{
+        display: block !important;
+    }
+}
+
+@media all and (max-height: 320px){
+    .minh{
+        &-25vh{
+            min-height: $section-s1__min-height;
+        }
     }
 }
